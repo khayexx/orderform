@@ -106,14 +106,64 @@
 					<input type="radio"
 							name="pattyChoice"
 							id="singlePatty"
-							value="single"/>Single Patty ₱30
+							value="single"/>Single Patty (₱30)
 				</p>
 				<p class="food"><img src="BUERANO_IMAGES_CSAD/single.jpg" /></p>
+				<p>
+					<label>Ingredients:</label>
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkCheese"
+							value="cheese" />With Cheese (+₱15)
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkColeslaw"
+							value="coleslaw" />Coleslaw (+₱15)
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkTomato"
+							value="tomato" />Tomato (+₱10)
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkOnion"
+							value="onion" />Onion (+₱10)
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkCucumber"
+							value="cucumber" />Cucumber (+₱5)
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkBacon"
+							value="bacon" />Bacon (+₱20)
+				</p>
+				<p>
+					<label>Choice of Bun:</label>
+				
+					<input type="radio"
+							name="bunChoice"
+							id="whiteBun"
+							value="white"/> White bun (+₱15)
+				
+					<input type="radio"
+							name="bunChoice"
+							id="wheatBun"
+							value="wheat"/> Wheat bun (+₱25)
+				</p>
+				<p>
+					<label>Quantity:</label>
+					<input type="text" />
+				</p>
 				<p class="food">
 					<input type="radio"
 							name="pattyChoice"
 							id="doublePatty"
-							value="double"/> Double Patty ₱45
+							value="double"/> Double Patty (₱45)
 				</p>
 				<p class="food"><img src="BUERANO_IMAGES_CSAD/double.png"/></p>
 				<p>
@@ -122,32 +172,32 @@
 				<p class="food">
 					<input type="checkbox" 
 							id="chkCheese"
-							value="cheese" />With Cheese +₱15
+							value="cheese" />With Cheese (+₱15)
 				</p>
 				<p class="food">
 					<input type="checkbox" 
 							id="chkColeslaw"
-							value="coleslaw" />Coleslaw +₱15
+							value="coleslaw" />Coleslaw (+₱15)
 				</p>
 				<p class="food">
 					<input type="checkbox" 
 							id="chkTomato"
-							value="tomato" />Tomato +₱10
+							value="tomato" />Tomato (+₱10)
 				</p>
 				<p class="food">
 					<input type="checkbox" 
 							id="chkOnion"
-							value="onion" />Onion +₱10
+							value="onion" />Onion (+₱10)
 				</p>
 				<p class="food">
 					<input type="checkbox" 
 							id="chkCucumber"
-							value="cucumber" />Cucumber +₱5
+							value="cucumber" />Cucumber (+₱5)
 				</p>
 				<p class="food">
 					<input type="checkbox" 
 							id="chkBacon"
-							value="bacon" />Bacon +₱P20
+							value="bacon" />Bacon (+₱20)
 				</p>
 				<p>
 					<label>Choice of Bun:</label>
@@ -155,12 +205,12 @@
 					<input type="radio"
 							name="bunChoice"
 							id="whiteBun"
-							value="white"/> White bun +₱15
+							value="white"/> White bun (+₱15)
 				
 					<input type="radio"
 							name="bunChoice"
 							id="wheatBun"
-							value="wheat"/> Wheat bun +₱25
+							value="wheat"/> Wheat bun (+₱25)
 				</p>
 				<p>
 					<label>Quantity:</label>
@@ -177,7 +227,7 @@
 				<p class="food">
 					<input type="checkbox" 
 							id="chkCarbonara"
-							value="carbonara"/> Carbonara ₱60
+							value="carbonara"/> Carbonara (₱60)
 					
 				</p>
 				<p class="food"><img src="BUERANO_IMAGES_CSAD/carb.jpg"/></p>
@@ -188,7 +238,7 @@
 				<p class="food">
 					<input type="checkbox" 
 							id="chkPesto"
-							value="pesto"/> Pesto ₱70
+							value="pesto"/> Pesto (₱70)
 					
 				</p>
 				<p class="food"><img src="BUERANO_IMAGES_CSAD/pesto.jpg"/></p>
@@ -199,7 +249,7 @@
 				<p class="food">
 					<input type="checkbox" 
 							id="chkSpag"
-							value="spag"/> Spaghetti ₱60
+							value="spag"/> Spaghetti (₱60)
 				</p>
 				<p class="food"><img src="BUERANO_IMAGES_CSAD/spag.jpg"/></p>
 				<p class="qty">
@@ -213,22 +263,22 @@
 				<p class="food">
 					<input type="checkbox" 
 							id="chkCheese"
-							value="cheese" />Extra Cheese +₱15
+							value="cheese" />Extra Cheese (+₱15)
 				</p>
 				<p class="food">
 					<input type="checkbox" 
 							id="chkSauce"
-							value="sauce" />Extra Sauce +₱20
+							value="sauce" />Extra Sauce (+₱20)
 				</p>
 				<p class="food">
 					<input type="checkbox" 
 							id="chkMeat"
-							value="Meat" />Extra Meat +₱20
+							value="Meat" />Extra Meat (+₱20)
 				</p>
 				<p class="food">
 					<input type="checkbox" 
 							id="chkveggies"
-							value="veggies" />Extra veggies +₱15
+							value="veggies" />Extra veggies (+₱15)
 				</p><br>
 				<a href="#top" class="menuButton" style="margin-left:450px;">Go Top</a><br><br>
 			</fieldset>
@@ -246,11 +296,11 @@
 							value="small" />Small&nbsp;&nbsp;&nbsp;
 					<label>Flavor:</label>
 					<select id="selFlavor">
-						<option value = "plain">Plain ₱35</option>
-						<option value = "bbq">Bbq ₱40</option>
-						<option value = "sour">Sour cream ₱40</option>
-						<option value = "cheese">Cheese ₱40</option>
-						<option value = "spicy">Spicy ₱40</option>
+						<option value = "plain">Plain (₱35)</option>
+						<option value = "bbq">Bbq (₱40)</option>
+						<option value = "sour">Sour cream (₱40)</option>
+						<option value = "cheese">Cheese (₱40)</option>
+						<option value = "spicy">Spicy (₱40)</option>
 					</select>
 					<label>Qty:</label>
 					<input type="text" />
@@ -261,11 +311,11 @@
 							value="med" />Medium&nbsp;&nbsp;&nbsp;
 					<label>Flavor:</label>
 					<select id="selFlavor">
-						<option value = "plain">Plain ₱45</option>
-						<option value = "bbq">Bbq ₱50</option>
-						<option value = "sour">Sour cream ₱50</option>
-						<option value = "cheese">Cheese ₱50</option>
-						<option value = "spicy">Spicy ₱</option>
+						<option value = "plain">Plain (₱45)</option>
+						<option value = "bbq">Bbq (₱50)</option>
+						<option value = "sour">Sour cream (₱50)</option>
+						<option value = "cheese">Cheese (₱50)</option>
+						<option value = "spicy">Spicy (₱50)</option>
 					</select>
 					<label>Qty:</label>
 					<input type="text" />
@@ -276,11 +326,11 @@
 							value="large" />Large&nbsp;&nbsp;&nbsp;
 					<label>Flavor:</label>
 					<select id="selFlavor">
-						<option value = "plain">Plain ₱65</option>
-						<option value = "bbq">Bbq ₱70</option>
-						<option value = "sour">Sour cream ₱70</option>
-						<option value = "cheese">Cheese ₱70</option>
-						<option value = "spicy">Spicy ₱70</option>
+						<option value = "plain">Plain (₱65)</option>
+						<option value = "bbq">Bbq (₱70)</option>
+						<option value = "sour">Sour cream (₱70)</option>
+						<option value = "cheese">Cheese (₱70)</option>
+						<option value = "spicy">Spicy (₱70)</option>
 					</select>
 					<label>Qty:</label>
 					<input type="text" />
@@ -301,12 +351,12 @@
 							value="reg" />Regular&nbsp;&nbsp;&nbsp;
 					<label>Type:</label>
 					<select id="selType">
-						<option value = "coke">Coke ₱15</option>
-						<option value = "cokeZero">Coke Zero ₱20</option>
-						<option value = "sprite">Sprite ₱15</option>
-						<option value = "royal">Royal ₱15</option>
-						<option value = "icedTea">Iced Tea ₱12</option>
-						<option value = "redTea">Red Iced Tea ₱12</option>
+						<option value = "coke">Coke (₱15)</option>
+						<option value = "cokeZero">Coke Zero (₱20)</option>
+						<option value = "sprite">Sprite (₱15)</option>
+						<option value = "royal">Royal (₱15)</option>
+						<option value = "icedTea">Iced Tea (₱12)</option>
+						<option value = "redTea">Red Iced Tea (₱12)</option>
 					</select>
 					<label>Qty:</label>
 					<input type="text" />
@@ -317,12 +367,12 @@
 							value="large" />Large&nbsp;&nbsp;&nbsp;
 					<label>Type:</label>
 					<select id="selType">
-						<option value = "coke">Coke ₱20</option>
-						<option value = "cokeZero">Coke Zero ₱25</option>
-						<option value = "sprite">Sprite ₱20</option>
-						<option value = "royal">Royal ₱20</option>
-						<option value = "icedTea">Iced Tea ₱15</option>
-						<option value = "redTea">Red Iced Tea ₱15</option>
+						<option value = "coke">Coke (₱20)</option>
+						<option value = "cokeZero">Coke Zero (₱25)</option>
+						<option value = "sprite">Sprite (₱20)</option>
+						<option value = "royal">Royal (₱20)</option>
+						<option value = "icedTea">Iced Tea (₱15)</option>
+						<option value = "redTea">Red Iced Tea (₱15)</option>
 					</select>
 					<label>Qty:</label>
 					<input type="text" />
@@ -333,12 +383,12 @@
 							value="xlarge" />Extra Large&nbsp;&nbsp;&nbsp;
 					<label>Type:</label>
 					<select id="selType">
-						<option value = "coke">Coke ₱25</option>
-						<option value = "cokeZero">Coke Zero ₱30</option>
-						<option value = "sprite">Sprite ₱25</option>
-						<option value = "royal">Royal ₱25</option>
-						<option value = "icedTea">Iced Tea ₱20</option>
-						<option value = "redTea">Red Iced Tea ₱20</option>
+						<option value = "coke">Coke (₱25)</option>
+						<option value = "cokeZero">Coke Zero (₱30)</option>
+						<option value = "sprite">Sprite (₱25)</option>
+						<option value = "royal">Royal (₱25)</option>
+						<option value = "icedTea">Iced Tea (₱20)</option>
+						<option value = "redTea">Red Iced Tea (₱20)</option>
 					</select>
 					<label>Qty:</label>
 					<input type="text" />
