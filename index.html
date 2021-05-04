@@ -1,0 +1,404 @@
+<!DOCTYPE html> 
+<html lang="en">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+	body {
+		background-image: url('BUERANO_IMAGES_CSAD/vector.jpg');
+		background-repeat: repeat;
+		background-size:40%;
+		font-family: verdana;
+	}
+	p{
+		margin-left:250px;
+	}
+	p.food{
+		margin-left:370px;
+	}
+	h2{
+		color: red;
+		text-align:center;
+		font-family:lobster;
+		font-size:36px;
+	}
+	legend{
+		color:black;
+	}
+	fieldset{
+		color: black;
+		background-color:white;
+		background-opacity:80;
+		width:80%;
+		margin:auto;
+	}
+	img{
+		height:250px;
+	}
+	button{
+		padding:5px;
+		font-size:16px;
+		border-radius: 10px;
+		background-color: #D70A0A; 
+		color: white;
+	}
+	button:hover{
+		
+	}
+	hr{
+		border: 2px solid #ffc40c;
+		width:30%;
+	}
+	label{
+		font-weight:bold;
+	}
+	a.menuButton{
+		padding: 10px;
+		color:white;
+		background-color: #ffc40c;
+		border: 2px outset #ffc40c;
+		margin-left:auto;
+		margin-right:auto;
+		text-decoration:none;
+		font-weight:bold;
+	}
+	a.menuButton:hover{
+		color:#D70A0A;
+	}
+	.button{
+		margin-left:430px;
+		
+	}
+	.qty{
+		margin-left:405px;
+	}
+	
+
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css">
+    <!--BUERANO, KHAYE-->
+    <!--05.04.21-->
+	<!-- 
+		-->
+	<div class="container">
+		<form action="">
+			<fieldset>
+				<h2 id="top">Order Form</h2>
+				<hr><br>
+				<a href="#Burger" class="menuButton" style="margin-left:270px;">Burgers</a>
+				<a href="#Pasta" class="menuButton">Pasta</a>
+				<a href="#Fries" class="menuButton">Fries</a>
+				<a href="#Drinks" class="menuButton">Drinks</a>
+				<a href="#checkOut" class="menuButton">Check Out</a>
+				<br><br>
+			</fieldset>
+			<fieldset>
+				<h2 id="Burger">Burgers</h2>
+				<hr><br>
+				<p>
+					<label>Choose Patty:</label>
+				</p>
+				<p class="food">
+					<input type="radio"
+							name="pattyChoice"
+							id="singlePatty"
+							value="single"/>Single Patty
+				</p>
+				<p class="food"><img src="BUERANO_IMAGES_CSAD/single.jpg" /></p>
+				<p class="food">
+					<input type="radio"
+							name="pattyChoice"
+							id="doublePatty"
+							value="double"/> Double Patty
+				</p>
+				<p class="food"><img src="BUERANO_IMAGES_CSAD/double.png"/></p>
+				<p>
+					<label>Ingredients:</label>
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkCheese"
+							value="cheese" />With Cheese
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkColeslaw"
+							value="coleslaw" />Coleslaw
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkTomato"
+							value="tomato" />Tomato
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkOnion"
+							value="onion" />Onion
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkCucumber"
+							value="cucumber" />Cucumber
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkBacon"
+							value="bacon" />Bacon
+				</p>
+				<p>
+					<label>Choice of Bun:</label>
+				
+					<input type="radio"
+							name="bunChoice"
+							id="whiteBun"
+							value="white"/> White bun
+				
+					<input type="radio"
+							name="bunChoice"
+							id="wheatBun"
+							value="wheat"/> Wheat bun
+				</p>
+				<p>
+					<label>Quantity:</label>
+					<input type="text" />
+				</p><br>
+				<a href="#top" class="menuButton" style="margin-left:450px;">Go Top</a><br><br>
+			</fieldset>
+			<fieldset>
+				<h2 id="Pasta">Pasta</h2>
+				<hr><br>
+				<p>
+					<label>Select sauce:</label>
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkCarbonara"
+							value="carbonara"/> Carbonara
+					
+				</p>
+				<p class="food"><img src="BUERANO_IMAGES_CSAD/carb.jpg"/></p>
+				<p class="qty">
+					<label>Qty:</label>
+					<input type="text" />
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkPesto"
+							value="pesto"/> Pesto
+					
+				</p>
+				<p class="food"><img src="BUERANO_IMAGES_CSAD/pesto.jpg"/></p>
+				<p class="qty">
+					<label>Qty:</label>
+					<input type="text" />
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkSpag"
+							value="spag"/> Spaghetti
+				</p>
+				<p class="food"><img src="BUERANO_IMAGES_CSAD/spag.jpg"/></p>
+				<p class="qty">
+					<label>Qty:</label>
+					<input type="text" />
+				</p>
+				<br>
+				<p>
+					<label>Add-Ons:</label>
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkCheese"
+							value="cheese" />Extra Cheese
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkSauce"
+							value="sauce" />Extra Sauce
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkMeat"
+							value="Meat" />Extra Meat
+				</p>
+				<p class="food">
+					<input type="checkbox" 
+							id="chkveggies"
+							value="veggies" />Extra veggies
+				</p><br>
+				<a href="#top" class="menuButton" style="margin-left:450px;">Go Top</a><br><br>
+			</fieldset>
+			<fieldset>
+				<h2 id="Fries">Fries</h2>
+				<hr>
+				<br>
+				<p style="margin-left:310px;"><img src="BUERANO_IMAGES_CSAD/fries.jpg"/></p>
+				<p>
+					<label>Size:</label>
+				</p>
+				<p>
+					<input type="checkbox" 
+							id="chkSmall"
+							value="small" />Small&nbsp;&nbsp;&nbsp;
+					<label>Flavor:</label>
+					<select id="selFlavor">
+						<option value = "bbq">Bbq</option>
+						<option value = "sour">Sour cream</option>
+						<option value = "cheese">Cheese</option>
+						<option value = "spicy">Spicy</option>
+					</select>
+					<label>Qty:</label>
+					<input type="text" />
+				</p>
+				<p>
+					<input type="checkbox" 
+							id="chkMed"
+							value="med" />Medium&nbsp;&nbsp;&nbsp;
+					<label>Flavor:</label>
+					<select id="selFlavor">
+						<option value = "bbq">Bbq</option>
+						<option value = "sour">Sour cream</option>
+						<option value = "cheese">Cheese</option>
+						<option value = "spicy">Spicy</option>
+					</select>
+					<label>Qty:</label>
+					<input type="text" />
+				</p>
+				<p>
+					<input type="checkbox" 
+							id="chkLarge"
+							value="large" />Large&nbsp;&nbsp;&nbsp;
+					<label>Flavor:</label>
+					<select id="selFlavor">
+						<option value = "bbq">Bbq</option>
+						<option value = "sour">Sour cream</option>
+						<option value = "cheese">Cheese</option>
+						<option value = "spicy">Spicy</option>
+					</select>
+					<label>Qty:</label>
+					<input type="text" />
+				</p><br>
+				<a href="#top" class="menuButton" style="margin-left:450px;">Go Top</a><br><br>
+			</fieldset>
+			<fieldset>
+				<h2 id="Drinks">Drinks</h2>
+				<hr>
+				<br>
+				<p style="margin-left:318px;"><img src="BUERANO_IMAGES_CSAD/drinks.jpg"/></p>
+				<p>
+					<label>Size:</label>
+				</p>
+				<p>
+					<input type="checkbox" 
+							id="chkReg"
+							value="reg" />Regular&nbsp;&nbsp;&nbsp;
+					<label>Type:</label>
+					<select id="selType">
+						<option value = "coke">Coke</option>
+						<option value = "cokeZero">Coke Zero</option>
+						<option value = "sprite">Sprite</option>
+						<option value = "royal">Royal</option>
+						<option value = "icedTea">Iced Tea</option>
+						<option value = "redTea">Red Iced Tea</option>
+					</select>
+					<label>Qty:</label>
+					<input type="text" />
+				</p>
+				<p>
+					<input type="checkbox" 
+							id="chkLarge"
+							value="large" />Large&nbsp;&nbsp;&nbsp;
+					<label>Type:</label>
+					<select id="selType">
+						<option value = "coke">Coke</option>
+						<option value = "cokeZero">Coke Zero</option>
+						<option value = "sprite">Sprite</option>
+						<option value = "royal">Royal</option>
+						<option value = "icedTea">Iced Tea</option>
+						<option value = "redTea">Red Iced Tea</option>
+					</select>
+					<label>Qty:</label>
+					<input type="text" />
+				</p>
+				<p>
+					<input type="checkbox" 
+							id="chkxLarge"
+							value="xlarge" />Extra Large&nbsp;&nbsp;&nbsp;
+					<label>Type:</label>
+					<select id="selType">
+						<option value = "coke">Coke</option>
+						<option value = "cokeZero">Coke Zero</option>
+						<option value = "sprite">Sprite</option>
+						<option value = "royal">Royal</option>
+						<option value = "icedTea">Iced Tea</option>
+						<option value = "redTea">Red Iced Tea</option>
+					</select>
+					<label>Qty:</label>
+					<input type="text" />
+				</p><br>
+				<a href="#top" class="menuButton" style="margin-left:450px;">Go Top</a><br><br>
+			</fieldset>
+			<fieldset>
+				<h2 id="checkOut">Contact Information</h2>
+				<hr><br>
+				<p style="margin-left:310px;">
+					<label>Full name:</label>
+					<input type="text" />
+				</p>
+				<p style="margin-left:310px;">
+					<label>Complete Address:</label>
+					<input type="text" />
+				</p>
+				<p style="margin-left:310px;">
+					<label>Contact Number:</label>
+					<input type="text" />
+				</p>
+				<p style="margin-left:310px;">
+					<label>Email Address:</label>
+					<input type="text" />
+				</p>
+				<p style="margin-left:310px;">
+					<label>Description of how to get to the place/</label><br>
+					<label>Special Instructions:</label>
+				</p>
+				<p style="margin-left:310px;">
+					<textarea id="txtAnswer" rows="10" cols="48"></textarea>
+				</p>
+				<br>
+				<a href="#top" class="menuButton" style="margin-left:450px;">Go Top</a><br><br>
+				<h2>Mode of Delivery</h2>
+				<hr>
+					<p style="margin-left:370px;">
+						<input type="radio"
+								name="delChoice"
+								id="coD"
+								value="cod"/> Cash on Delivery
+						<input type="radio"
+								name="delChoice"
+								id="pickUp"
+								value="pickup"/> Pick-up
+					</p>
+					<br>	
+			</fieldset>
+			<fieldset>
+				<h2>Customer's Feedback</h2>
+				<hr>
+					<p>
+						<label>Please leave a feedback to improve our ordering form:</label>
+					</p>
+					<p>
+						<textarea id="txtAnswer" rows="10" cols="64"></textarea>
+					</p><br>
+				<button type="submit" class="button">Submit</button>
+				<button type="reset"/>Reset</button>
+			</fieldset>
+		</form>
+	</div>
+
+
+</body>
+</html>
